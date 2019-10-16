@@ -7,6 +7,7 @@
 <head>
 <meta charset="utf-8"/>
 <title>Przykladowa strona internetowa</title>
+<link rel="stylesheet" href="style.css" type = "text/css" />
 </head>
 
 
@@ -14,37 +15,58 @@
 <header>
   <a href="https://amw.gdynia.pl/"><img src="img/amw_logo.png" height="100" width="100"></a>
 </header>
-
+<div id="menu">
+	<div class="Opcje">Strona główna</div>
+	<div class="Opcje">Pozycja</div>
+	<div class="Opcje">Kontakt</div>
+	<div class="Opcje">Historia</div>
+	<div style= "clear:both;"></div>
+</div>
 <nav>
 <a href="http://www.wme.amw.gdynia.pl/">Link do wydziału WME</a>
 </nav>
+
+
+
 
 <section>
 <h1>Hello World</h1>
 Nowa linia<br/>
 Oddzielenie w sekcji
+
 </section>
+
+<div class ="container">
+
+
+
+</div>
 
 <article>
 <h1>Artykuł na temat uczelni AMW</h1>
 <div style="background-color:#d1dcf3;">
 <section>
+<div id = "ramka">
  <blockquote cite="https://pl.wikipedia.org/wiki/Akademia_Marynarki_Wojennej_im._Bohater%C3%B3w_Westerplatte">
  <strong>Akademia Marynarki Wojennej im. Bohaterów Westerplatte – uczelnia publiczna</strong>, <br><i>której siedziba zlokalizowana jest w Gdyni, w Polsce. Założona została w 1922 roku. 
 <br>Placówka nadzorowana jest przez Ministra Obrony Narodowej.</i> </blockquote>
+</div>
 </div>
 <p>
 Akademia Marynarki Wojennej im. Bohaterów Westerplatte – uczelnia publiczna, której siedziba zlokalizowana jest w Gdyni, w Polsce. Założona została w 1922 roku.
 </p>
 <p>
-Placówka nadzorowana jest przez Ministra Obrony Narodowej. <hr />Kształci podchorążych, oficerów oraz cywili na kierunkach związanych z nawigacją i mechaniką morską oraz obronnością. Wywodzi się z Tymczasowych Instruktorskich Kursów dla Oficerów, Oficerskiej Szkoły Marynarki Wojennej, Szkoły Podchorążych Marynarki Wojennej oraz Wyższej Szkoły Marynarki Wojennej.
+Placówka nadzorowana jest przez Ministra Obrony Narodowej. </br>Kształci podchorążych, oficerów oraz cywili na kierunkach związanych z nawigacją i mechaniką morską oraz obronnością. Wywodzi się z Tymczasowych Instruktorskich Kursów dla Oficerów, Oficerskiej Szkoły Marynarki Wojennej, Szkoły Podchorążych Marynarki Wojennej oraz Wyższej Szkoły Marynarki Wojennej.
 </p>
-
+<hr />
+</br>
+<h2>Artykuł AMW Wikipedii </h2>
 <iframe src="https://pl.wikipedia.org/wiki/Akademia_Marynarki_Wojennej_im._Bohater%C3%B3w_Westerplatte" width="1000" height="500">
 Lubie frytki!
 </iframe>
-
 </section>
+<hr />
+
 <div id ="tabelka">
 
 
@@ -81,16 +103,33 @@ Lubie frytki!
     </table>
 </div>
 <article/>
-
+<p class="akapit_1">
+  Sprawdzenie Selektora klasy.
+</p>
+<hr />
+<p class="akapit_1">
+  Sprawdzenie Selektora klasy ale z innym textem.
+</p>
 <aside>
   <h3>Boczny element</h3>
   <p>Przykładowy tekst sprawdzający działanie sekcji aside</p>
 </aside>
 <hr />
+
 <footer>
-<h5>Rafał Kostrzyński kostrzynskirafal@wp.pl AMW Gdynia"</h5>
+<h5>Rafał Kostrzyński kostrzynskirafal@wp.pl AMW Gdynia</h5>
 </footer>
 
+<script type="text/javascript">
+	
+	var newElement = document.createElement('li');
+	newElement.classList.add('text-center','text-uppercase');
+	newElement.style='TimesNewRoman';
+	newElement.style.color='red';
+	newElement.innerHTML='Nowy element utworzony w JS';
+	document.body.appendChild(newElement)
+	
+</script>
 
 </body>
 </html>

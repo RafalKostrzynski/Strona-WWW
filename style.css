@@ -1,0 +1,76 @@
+Body
+{
+	background-color: black;
+	color: white;
+	font-family: Palatino Linotype;
+	font-size: 15px;
+}
+h1
+{
+	font-size: 50px;
+	
+}
+nav
+{
+	font-size: 1cm;	
+}
+#ramka
+{
+	color: black;
+}
+header
+{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer
+{
+	letter-spacing: 3px;
+}
+aside
+{
+	margin-left: 700px;
+	margin-right: 10px;
+}
+#menu
+{
+	background-color: green;
+	margin-top: 1cm;
+	margin-bottom: 1cm;
+	
+	
+}
+.Opcje
+{
+	margin-right: 100px;
+	float: left;
+	min-width: 50px;
+	min-hight: 50px;
+	font-size: 20px;
+	padding: 20px;
+}
+.Opcje:hover
+{
+	background-color: gray;
+	cursor: pointer;
+}
+
+a:link
+{
+	color: blue;
+}
+a:visited
+{
+	color: blue;
+}
+a:hover
+{
+	color: red;
+	cursor: pointer;
+}
+p.akapit_1
+{
+  font-size:14px;
+  color:blue;
+}
